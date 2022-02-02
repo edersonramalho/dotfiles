@@ -1,10 +1,10 @@
 
 export ZSH="/home/essantos/.oh-my-zsh"
 
-ZSH_THEME="spaceship" 
+ZSH_THEME="spaceship"
 
 plugins=(
-	git
+	  git
     zsh-syntax-highlighting
     archlinux
     zsh-autosuggestions
