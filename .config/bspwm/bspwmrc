@@ -34,3 +34,4 @@ $HOME/.config/polybar/bspwm.sh
 feh --bg-fill ~/Imagens/wallpaper/nordic_01.jpg
 #/usr/share/backgrounds/bspwm/wall.png
 picom &
+sh /home/essantos/.script/backup_dotfiles.sh &
