@@ -27,3 +27,4 @@ rsync -ravz ~/workspace/_conf $DESTINO_CONF2
 cd $DESTINO
 git add .
 git commit -m "$Backup"
+git push
