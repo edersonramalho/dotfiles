@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dthr="$(date '+%Y%m%d%H%M')"
+dthr="$(date '+%Y%m%d - %H%M')"
 
 DESTINO=~/workspace/dotfiles/
 DESTINO_CONF=~/workspace/dotfiles/.config/
