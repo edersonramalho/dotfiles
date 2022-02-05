@@ -15,15 +15,16 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 #bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a firefox desktop='^2'
-bspc rule -a chrome desktop='^2'
 
-bspc rule -a subl desktop='^3'
+bspc rule -a firefox desktop='^2'
+bspc rule -a google-chrome desktop='^2' #follow=on
+bspc rule -a Chromium desktop='^2'  #follow=on
+
+bspc rule -a Subl desktop='^3'
 bspc rule -a code desktop='^3'
 
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a vlc desktop='^5'  follow=on
+bspc rule -a Spotify desktop='^5' follow=on
 
 ## Autostart
 

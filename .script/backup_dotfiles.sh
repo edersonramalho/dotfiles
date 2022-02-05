@@ -6,6 +6,8 @@ DESTINO=~/workspace/dotfiles/
 DESTINO_CONF=~/workspace/dotfiles/.config/
 DESTINO_CONF2=~/workspace/dotfiles/workspace/_conf/
 
+Backup="Backup "$dthr
+
 mkdir -p $DESTINO
 mkdir -p $DESTINO_CONF
 mkdir -p $DESTINO_CONF2
@@ -22,3 +24,6 @@ rsync -ravz ~/.config/polybar $DESTINO_CONF
 rsync -ravz ~/.config/sxhkd $DESTINO_CONF
 rsync -ravz ~/workspace/_conf $DESTINO_CONF2
 
+cd $DESTINO
+git add .
+git commit -m "$Backup"
