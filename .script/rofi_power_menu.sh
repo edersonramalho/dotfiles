@@ -2,7 +2,7 @@
 
 OPTIONS="Reboot system\nPower-off system\nSuspend system\nHibernate system\nLock system\nExit window manager"
 
-LAUNCHER="rofi -theme custom -dmenu -i -p rofi-power:"
+LAUNCHER="rofi -theme squared-nord -dmenu -i -p rofi-power:"
 USE_LOCKER="true"
 LOCKER="$HOME/scripts/lockscript/lock -n"
 
