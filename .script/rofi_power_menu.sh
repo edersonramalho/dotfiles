@@ -1,5 +1,43 @@
 #!/usr/bin/env bash
 
+# Set environment
+#export BSPWM_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/bspwm"
+
+# Function to kill programs
+killprogs() {
+  # Kill udisks-glue
+  pkill -x udisks-glue
+  # Kill panel
+  pkill -x panel
+  # Kill Redshift
+  pkill -x redshift
+}
+
+# Restart function
+# shellcheck source=/dev/null
+restart() {
+  # Save session status
+  . "$BSPWM_CONFIG/restore.cfg"
+  bspc wm --dump-state > "$BSPWM_STATE"
+  # Kill programs
+  killprogs
+  # Quit bspwm
+  bspc quit 0
+}
+
+# Logout function
+logout() {
+  # For each opened window
+  bspc query --nodes | while read -r winid; do
+    # Close it
+    xdotool windowkill "$winid"
+  done
+  # Kill programs
+  killprogs
+  # Quit bspwm
+  bspc quit 1
+}
+
 #OPTIONS="Reboot system\nPower-off system\nSuspend system\nHibernate system\nLock system\nExit window manager"
 OPTIONS="Reiniciar\nDesligar\nSuspender\nHibernar\nLock\nLogout"
 
