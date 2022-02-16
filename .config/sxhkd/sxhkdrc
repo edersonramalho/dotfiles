@@ -38,8 +38,7 @@ super + F8
 ## Power
 
 super + p
-	sh ~/.script/rofi_power_menu_v2.sh
-	#sh ~/.script/rofi_power_menu.sh
+	sh ~/.script/rofi_power_menu.sh
 
 ## Tradução
 
