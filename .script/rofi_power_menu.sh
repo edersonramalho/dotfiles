@@ -14,7 +14,7 @@ then
       Exit)
         i3-msg exit
         ;;
-      Reboot)
+      Reiniciar)
         systemctl reboot
         ;;
       Power-off)
