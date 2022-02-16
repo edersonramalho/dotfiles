@@ -35,10 +35,17 @@ super + F8
 # Rofi
 #################################################################
 
+## Power
+
 super + p
 	sh ~/.script/rofi_power_menu.sh
 
+## Tradução
+
 super + shift + t 
+	sh ~/.script/rofi_tradu.sh
+
+super + shift + f
 	sh ~/.script/rofi_tradu.sh
 
 #################################################################
