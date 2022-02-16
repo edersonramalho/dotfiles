@@ -3,6 +3,9 @@
 # Set environment
 #export BSPWM_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/bspwm"
 
+# File to save status
+export BSPWM_STATE="${XDG_DATA_HOME:-$HOME/.local/share}/bspwm-state.json"
+
 # Function to kill programs
 killprogs() {
   # Kill udisks-glue
