@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-OPTIONS="Reboot system\nPower-off system\nSuspend system\nHibernate system\nLock system\nExit window manager"
+#OPTIONS="Reboot system\nPower-off system\nSuspend system\nHibernate system\nLock system\nExit window manager"
+OPTIONS="Reiniciar\nDesligar\nSuspender\nHibernar\nLock\nLogout"
 
 LAUNCHER="rofi -theme squared-nord -dmenu -i -p rofi-power:"
 USE_LOCKER="true"
