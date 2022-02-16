@@ -33,3 +33,31 @@ then
         ;;
     esac
 fi
+
+'''
+if [ ${#option} -gt 0 ]
+then
+    case $option in
+      Exit)
+        i3-msg exit
+        ;;
+      Reboot)
+        systemctl reboot
+        ;;
+      Power-off)
+        systemctl poweroff
+        ;;
+      Suspend)
+        $($USE_LOCKER) && "$LOCKER"; systemctl suspend
+        ;;
+      Hibernate)
+        $($USE_LOCKER) && "$LOCKER"; systemctl hibernate
+        ;;
+      Lock)
+  $LOCKER
+  ;;
+      *)
+        ;;
+    esac
+fi
+'''
