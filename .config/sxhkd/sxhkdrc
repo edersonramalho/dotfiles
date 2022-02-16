@@ -46,7 +46,7 @@ super + shift + t
 	sh ~/.script/rofi_tradu.sh
 
 super + shift + f
-	sh ~/.script/rofi_tradu.sh
+	sh ~/.script/rofi_filebrowser.sh
 
 #################################################################
 # Padrão
