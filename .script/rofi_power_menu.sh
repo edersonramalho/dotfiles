@@ -11,19 +11,19 @@ option=`echo -e $OPTIONS | $LAUNCHER | awk '{print $1}' | tr -d '\r\n'`
 if [ ${#option} -gt 0 ]
 then
     case $option in
-      Exit)
+      Logout)
         i3-msg exit
         ;;
       Reiniciar)
         systemctl reboot
         ;;
-      Power-off)
+      Desligar)
         systemctl poweroff
         ;;
-      Suspend)
+      Suspender)
         $($USE_LOCKER) && "$LOCKER"; systemctl suspend
         ;;
-      Hibernate)
+      Hibernar)
         $($USE_LOCKER) && "$LOCKER"; systemctl hibernate
         ;;
       Lock)
