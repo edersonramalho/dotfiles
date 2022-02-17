@@ -15,12 +15,17 @@ mkdir -p $DESTINO_CONF2
 rsync -ravz ~/.zshrc $DESTINO
 rsync -ravz ~/.script $DESTINO
 rsync -ravz ~/.vimrc $DESTINO
+rsync -ravz ~/.gitconfig $DESTINO
 rsync -ravz ~/.config/autostart $DESTINO_CONF
 rsync -ravz ~/.config/bspwm $DESTINO_CONF
+rsync -ravz ~/.config/htop $DESTINO_CONF
 rsync -ravz ~/.config/kitty $DESTINO_CONF
+rsync -ravz ~/.config/neofetch $DESTINO_CONF
 rsync -ravz --exclude plugged ~/.config/nvim $DESTINO_CONF
 rsync -ravz ~/.config/picom $DESTINO_CONF
 rsync -ravz ~/.config/polybar $DESTINO_CONF
+rsync -ravz ~/.config/ranger $DESTINO_CONF
+rsync -ravz ~/.config/rofi $DESTINO_CONF
 rsync -ravz ~/.config/sxhkd $DESTINO_CONF
 rsync -ravz ~/workspace/_conf $DESTINO_CONF2
 

@@ -1,0 +1,7 @@
+[user]
+	name = Ederson Santos
+	e-mail = edersonramalho@gmail.com
+	email = edersonramalho@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
