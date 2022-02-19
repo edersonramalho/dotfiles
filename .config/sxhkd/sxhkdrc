@@ -48,6 +48,9 @@ super + shift + t
 super + shift + f
 	sh ~/.script/rofi_filebrowser.sh
 
+super + shift + b
+	sh ~/.script/rofi_bluetooth.sh
+
 #################################################################
 # Padrão
 #################################################################
