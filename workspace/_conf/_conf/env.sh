@@ -23,7 +23,13 @@ function f() { find . -iname "*$1*" ${@:2} }
 function r() { grep "$1" ${@:2} -R . }
 
 # Create a folder and move into it in one command
-function mkcd() { mkdir -p "$@" && cd "$_"; }
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
+
+#del
+alias del="rm -rf"
+
+#tar
+alias untar="tar -zxvf"
 
 ### Aliases
 alias cppcompile='c++ -std=c++11 -stdlib=libc++'
@@ -75,6 +81,7 @@ alias hg="history | grep "
 alias ports="netstat -nlp"
 
 ### Git
+alias gac="git add . && git commit -a -m "
 #alias rs="rails s"
 alias py="./manage.py runserver"
 
@@ -94,6 +101,7 @@ alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed
 
 ###
 alias update="sudo pacman -Syyu; paru -Syu"
+alias install="sudo pacman -Sy"
 alias df="df -h"
 
 ### Rofi
