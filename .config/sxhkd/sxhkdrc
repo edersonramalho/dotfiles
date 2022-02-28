@@ -68,6 +68,10 @@ super + Print
     maim -s "$HOME/Imagens/screenshots/$DATE"; \
     notify-send -i "$HOME/Imagens/screenshots/$DATE" -t 6500 "Printscreen Salvo" "O arquivo foi salvo em /HOME/Imagens/screenshots!"
 
+super + shift + Print
+    maim --select | xclip -selection clipboard -target image/png; /
+    notify-send -i "$HOME/Imagens/screenshots/$DATE" -t 6500 "Printscreen Salvo" "O arquivo foi salvo na 'Área de Transferência'!"
+
 #@Print
 #  maim "/tmp/$(date +%W.%A)-scrot$(date +%s | tail -c 5).png" && \
 #  notify-send -a maim "Took a screenshot (full screen)."
