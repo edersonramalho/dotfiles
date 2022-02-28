@@ -70,7 +70,7 @@ super + Print
 
 super + shift + Print
     maim --select | xclip -selection clipboard -target image/png; \
-    notify-send -t 6500 "Printscreen Salvo" "O arquivo foi salvo na 'Área de Transferência'!"
+    notify-send --icon=/usr/share/icons/gnome/32x32/actions/edit-paste.png -t 6500 "Printscreen Salvo" "O arquivo foi salvo na 'Área de Transferência'!"
 
 #@Print
 #  maim "/tmp/$(date +%W.%A)-scrot$(date +%s | tail -c 5).png" && \
