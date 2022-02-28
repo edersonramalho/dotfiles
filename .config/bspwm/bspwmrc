@@ -26,6 +26,7 @@ bspc config gapless_monocle      true
 
 # Send to www desktop
 bspc rule --add Firefox                     desktop='^2' follow=on
+rule firefox                        		desktop=2
 bspc rule --add google-chrome-stable        desktop='^2' follow=on
 
 # Send to dev desktop
