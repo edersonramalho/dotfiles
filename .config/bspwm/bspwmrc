@@ -14,17 +14,17 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-#bspc rule -a Gimp desktop='^8' state=floating follow=on
+#rule
 
-bspc rule -a firefox desktop='^2'
-bspc rule -a google-chrome desktop='^2' #follow=on
-bspc rule -a Chromium desktop='^2'  #follow=on
+#bspc rule -a firefox desktop='^2'
+#bspc rule -a google-chrome desktop='^2' #follow=on
+#bspc rule -a Chromium desktop='^2'  #follow=on
 
 bspc rule -a Subl desktop='^3'
 bspc rule -a code desktop='^3'
 
-bspc rule -a vlc desktop='^5'  follow=on
-bspc rule -a Spotify desktop='^5' follow=on
+#bspc rule -a vlc desktop='^5'  follow=on
+#bspc rule -a Spotify desktop='^5' follow=on
 
 ## Autostart
 
