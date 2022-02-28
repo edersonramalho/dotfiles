@@ -53,6 +53,34 @@ super + shift + w
 	sh ~/.script/rofi_menu_wifi.sh
 
 #################################################################
+# Screenshot
+#################################################################
+
+# Save to local storage
+Print
+    DATE=$(date '+%b%d-%H-%M.png'); \
+    maim -us "$HOME/Imagens/screenshots/$DATE"; \
+    notify-send -i /home/user/.fluxbox/salvo.png -t 6500 "Printscreen Salvo" "O arquivo foi salvo em /HOME/Imagens/screenshots!"
+    #notify-send -a maim "Took a screenshot (full screen)." 
+    #sh ~/.local/bin/viewscr ~/Pictures/Screenshots/$DATE | xclip -selection clipboard -t image/png
+
+# Upload to CDN
+super + Print
+    DATE=$(date '+%b%d-%H-%M.png'); \
+    maim -us "$HOME/Imagens/screenshots/$DATE"; \
+    sh ~/.local/bin/upldscr $HOME/Pictures/Screenshots/$DATE
+
+#@Print
+#  maim "/tmp/$(date +%W.%A)-scrot$(date +%s | tail -c 5).png" && \
+#  notify-send -a maim "Took a screenshot (full screen)."
+#ctrl + @Print
+#  maim -i $(xdotool getactivewindow) "/tmp/$(date +%W.%A)-window$(date +%s | tail -c 5).png" && \
+#  notify-send -a maim "Took a screenshot (window)."
+#ctrl + shift + @Print
+#  maim -s -c 0.1,0.05,0.3,1 "/tmp/$(date +%W.%A)-slop$(date +%s | tail -c 5).png" && \
+#  notify-send -a maim "Took a screenshot (area)."
+
+#################################################################
 # Padrão
 #################################################################
 
