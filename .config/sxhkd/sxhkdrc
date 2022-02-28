@@ -60,15 +60,13 @@ super + shift + w
 Print
     DATE=$(date '+%Y%m%d-%H:%M:%S_tela.png'); \
     maim -u "$HOME/Imagens/screenshots/$DATE"; \
-    notify-send -i "$HOME/Imagens/screenshots/$DATE" -t 6500 "Printscreen Salvo" "O arquivo foi salvo em /HOME/Imagens/screenshots!"
-    #notify-send -a maim "Took a screenshot (full screen)." 
-    #sh ~/.local/bin/viewscr ~/Pictures/Screenshots/$DATE | xclip -selection clipboard -t image/png
+    notify-send -i "$HOME/Imagens/screenshots/$DATE" -t 6500 "Printscreen Salvo" "O arquivo foi salvo em /HOME/Imagens/screenshots!"    
 
 # 
 super + Print
-    DATE=$(date '+%b%d-%H-%M.png'); \
-    maim -us "$HOME/Imagens/screenshots/$DATE"; \
-    sh ~/.local/bin/upldscr $HOME/Pictures/Screenshots/$DATE
+    DATE=$(date '+%Y%m%d-%H:%M:%S_area.png'); \
+    maim -s "$HOME/Imagens/screenshots/$DATE"; \
+    notify-send -i "$HOME/Imagens/screenshots/$DATE" -t 6500 "Printscreen Salvo" "O arquivo foi salvo em /HOME/Imagens/screenshots!"
 
 #@Print
 #  maim "/tmp/$(date +%W.%A)-scrot$(date +%s | tail -c 5).png" && \
