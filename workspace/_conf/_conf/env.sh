@@ -100,7 +100,7 @@ alias screen1='xrandr --auto'
 alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed to 65"'
 
 ###
-alias update="sudo pacman -Syyu; paru -Syu"
+alias update="sudo pacman -Syyuu; paru -Syu"
 alias install="sudo pacman -Sy"
 alias df="df -h"
 

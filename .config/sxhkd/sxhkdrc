@@ -36,12 +36,10 @@ super + F8
 #################################################################
 
 ## Power
-
 super + p
 	sh ~/.script/rofi_power_menu.sh
 
 ## Tradução
-
 super + shift + t 
 	sh ~/.script/rofi_tradu.sh
 
@@ -50,6 +48,9 @@ super + shift + f
 
 super + shift + b
 	sh ~/.script/rofi_bluetooth.sh
+
+super + shift + w
+	sh ~/.script/rofi_menu_wifi.sh
 
 #################################################################
 # Padrão
