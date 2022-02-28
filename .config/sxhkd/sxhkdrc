@@ -69,7 +69,7 @@ super + Print
     notify-send -i "$HOME/Imagens/screenshots/$DATE" -t 6500 "Printscreen Salvo" "O arquivo foi salvo em /HOME/Imagens/screenshots!"
 
 super + shift + Print
-    maim --select | xclip -selection clipboard -target image/png; /
+    maim --select | xclip -selection clipboard -target image/png; \
     notify-send -t 6500 "Printscreen Salvo" "O arquivo foi salvo na 'Área de Transferência'!"
 
 #@Print
