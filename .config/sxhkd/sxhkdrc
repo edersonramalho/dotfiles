@@ -58,7 +58,7 @@ super + shift + w
 
 # Save to local storage
 Print
-    DATE=$(date '+%d-%m-%y-%H:%M:%S.png'); \
+    DATE=$(date '+%y%m%d-%H:%M:%S_SCREEN.png'); \
     maim -us "$HOME/Imagens/screenshots/$DATE"; \
     notify-send -i /home/user/.fluxbox/salvo.png -t 6500 "Printscreen Salvo" "O arquivo foi salvo em /HOME/Imagens/screenshots!"
     #notify-send -a maim "Took a screenshot (full screen)." 
