@@ -27,6 +27,7 @@ rsync -ravz ~/.config/polybar $DESTINO_CONF
 rsync -ravz ~/.config/ranger $DESTINO_CONF
 rsync -ravz ~/.config/rofi $DESTINO_CONF
 rsync -ravz ~/.config/sxhkd $DESTINO_CONF
+rsync -ravz ~/.config/betterlockscreenrc $DESTINO_CONF
 rsync -ravz ~/workspace/_conf $DESTINO_CONF2
 
 cd $DESTINO
