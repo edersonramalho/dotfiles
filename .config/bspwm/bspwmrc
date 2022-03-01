@@ -42,8 +42,8 @@ bspc rule --add Vlc                         desktop='^5' follow=on
 ## Autostart
 
 nm-applet &
-$HOME/.config/polybar/bspwm.sh
-feh --bg-fill ~/Imagens/wallpaper/nordic_01.jpg
-betterlockscreen -u ~/Imagens/wallpaper/nordic_01.jpg
+$HOME/.config/polybar/bspwm.sh &
+feh --bg-fill ~/Imagens/wallpaper/nordic_01.jpg &
+betterlockscreen -u ~/Imagens/wallpaper/nordic_01.jpg &
 picom &
 sh /home/essantos/.script/backup_dotfiles.sh &
