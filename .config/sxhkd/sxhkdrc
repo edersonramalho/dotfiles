@@ -82,6 +82,11 @@ super + shift + Print
 #  maim -s -c 0.1,0.05,0.3,1 "/tmp/$(date +%W.%A)-slop$(date +%s | tail -c 5).png" && \
 #  notify-send -a maim "Took a screenshot (area)."
 
+# lockscreen
+crtl + shift + del
+    betterlockscreen -l blur
+
+
 #################################################################
 # Padrão
 #################################################################
