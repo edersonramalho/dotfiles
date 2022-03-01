@@ -83,7 +83,7 @@ super + shift + Print
 #  notify-send -a maim "Took a screenshot (area)."
 
 # lockscreen
-super + shift + del
+super + shift + Delete
     betterlockscreen -l blur
 
 
