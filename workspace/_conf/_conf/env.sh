@@ -59,6 +59,7 @@ alias now='date +"%T'
 # Definir o editor padrão
 alias vi=nvim
 alias vim=nvim
+alias nv=nvim
 
 # Uso do vim com privilégios
 alias svi='sudo nvim'
