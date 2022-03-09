@@ -13,7 +13,11 @@ export EDITOR=nvim
 #workspace
 export PROJECT_HOME=~/workspace
 
+#Config
 export XDG_CONFIG_HOME="$HOME/.config"
+
+#
+export MYVIMRC="$HOME/.config/nvim/init.vim"
 
 #bat
 export BAT_THEME="Nord"

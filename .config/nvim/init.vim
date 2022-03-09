@@ -1,4 +1,6 @@
 
+set encoding=utf-8
+
 call plug#begin('~/.config/nvim/site/autoload')
 
   Plug 'davidhalter/jedi-vim'
@@ -6,12 +8,35 @@ call plug#begin('~/.config/nvim/site/autoload')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'Rasukarusan/nvim-select-multi-line'
-  Plug 'scrooloose/nerdtree'
-  Plug 'jistr/vim-nerdtree-tabs'
+
+  "tree
+  Plug 'preservim/nerdtree'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'ryanoasis/vim-devicons'
+  "Plug 'scrooloose/nerdtree'
+  "Plug 'jistr/vim-nerdtree-tabs'
+
   Plug 'dense-analysis/ale'
 
   "If you are using Vim-Plug
   Plug 'shaunsingh/nord.nvim'
+
+  " sintaxe para várias linguagens
+  Plug 'sheerun/vim-polyglot'
+
+  " para apresentar a identação
+  Plug 'Yggdroot/indentLine'
+
+  " Atalho para comentários
+  Plug 'tpope/vim-commentary'
+
+  " the framework
+  "Plug 'roxma/nvim-completion-manager'
+
+  "Plug 'lexima.vim'
+
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -40,10 +65,10 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-
-
-let mapleader="\<crtl>"
-nnoremap <leader>; A;<esc>
+" Teclas de Atalho
+let mapleader="\<c>"
+nnoremap <c~;> A;<esc>
+nnoremap <c-s> :source $MYVIMRC<cr>
 
 " Thema Nord
 let g:nord_contrast = v:true

@@ -95,3 +95,5 @@ eval "$(ssh-agent -s)"
 
 #Ederson 09/02/2021
 source ~/workspace/_conf/env.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
