@@ -86,6 +86,32 @@ super + shift + Print
 super + shift + Delete
     betterlockscreen -l blur
 
+#################################################################
+# Brilho e Volume
+#################################################################
+
+# brightness control
+
+XF86MonBrightnessDown
+    sh ~/.script/changebrightness.sh down
+	#sudo xbacklight -dec 5
+
+XF86MonBrightnessUp
+	sh ~/.script/changebrightness.sh up
+	#sudo xbacklight -inc 5
+
+# volume keys
+XF86AudioRaiseVolume
+	sh ~/.script/changevolume.sh up
+	#amixer set Master 5%+
+
+XF86AudioLowerVolume
+	sh ~/.script/changevolume.sh down
+	#amixer set Master 5%-
+
+XF86AudioMute
+	sh ~/.script/changevolume.sh mute
+	#amixer set Master toggle
 
 #################################################################
 # Padrão
@@ -213,20 +239,6 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
-
-# volume control
-XF86AudioLowerVolume
-	amixer set Master 5%-
-XF86AudioRaiseVolume
-	amixer set Master 5%+
-XF86AudioMute
-	amixer set Master toggle
-
-# brightness control
-XF86MonBrightnessDown
-	sudo xbacklight -dec 5
-XF86MonBrightnessUp
-	sudo xbacklight -inc 5
 
 # lock screen
 super + x
