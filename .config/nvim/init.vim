@@ -70,7 +70,13 @@ call plug#begin('~/.config/nvim/site/autoload')
     " add this line to your .vimrc file
     Plug 'mattn/emmet-vim'
 
+    Plug 'JamshedVesuna/vim-markdown-preview'
+
+    Plug 'mileszs/ack.vim'
+
 call plug#end()
+
+let vim_markdown_preview_github=1
 
 " ativar indentação automática
 set autoindent
@@ -142,7 +148,7 @@ set guifont=Anonymice\ Nerd\ Font\ Mono:h12
 
 " Identar
 let g:indentLine_enabled = 1
-map <c-k>i :IndentLinesToggle<cr>
+map <C-k>i :IndentLinesToggle<cr>
 
 " Config Plug 'glepnir/dashboard-nvim'
 let g:dashboard_default_executive ='clap'
