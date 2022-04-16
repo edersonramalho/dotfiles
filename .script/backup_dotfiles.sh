@@ -5,7 +5,7 @@ dthr="$(date '+%d/%m/%Y %H:%M')"
 DESTINO=~/workspace/dotfiles/
 DESTINO_CONF=~/workspace/dotfiles/.config/
 DESTINO_CONF2=~/workspace/dotfiles/workspace/_conf/
-DESTINO_GRUB=~/workspace/dotfile/grub/
+DESTINO_GRUB=~/workspace/dotfiles/grub/
 
 Backup="Backup "$dthr
 
