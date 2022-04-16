@@ -32,6 +32,7 @@ rsync -ravz ~/.config/sxhkd $DESTINO_CONF
 rsync -ravz ~/.config/betterlockscreenrc $DESTINO_CONF
 rsync -ravz ~/workspace/_conf $DESTINO_CONF2
 rsync -ravz /boot/grub/grub* $DESTINO_GRUB
+rsync -ravz /etc/default $DESTINO_GRUB
 
 cd $DESTINO
 git add .
