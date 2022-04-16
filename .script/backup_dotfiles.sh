@@ -5,12 +5,14 @@ dthr="$(date '+%d/%m/%Y %H:%M')"
 DESTINO=~/workspace/dotfiles/
 DESTINO_CONF=~/workspace/dotfiles/.config/
 DESTINO_CONF2=~/workspace/dotfiles/workspace/_conf/
+DESTINO_GRUB=~/workspace/dotfile/grub/
 
 Backup="Backup "$dthr
 
 mkdir -p $DESTINO
 mkdir -p $DESTINO_CONF
 mkdir -p $DESTINO_CONF2
+mkdir -p $DESTINO_GRUB
 
 rsync -ravz ~/.zshrc $DESTINO
 rsync -ravz ~/.script $DESTINO
@@ -29,6 +31,7 @@ rsync -ravz ~/.config/rofi $DESTINO_CONF
 rsync -ravz ~/.config/sxhkd $DESTINO_CONF
 rsync -ravz ~/.config/betterlockscreenrc $DESTINO_CONF
 rsync -ravz ~/workspace/_conf $DESTINO_CONF2
+rsync -ravz /boot/grub/grub* $DESTINO_GRUB
 
 cd $DESTINO
 git add .
