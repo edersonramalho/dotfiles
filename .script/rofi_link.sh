@@ -30,7 +30,7 @@ twitter=""
 github=""
 mail=""
 youtube=""
-curso=""
+curso=""
 
 # Variable passed to rofi
 options="$google\n$twitter\n$github\n$mail\n$youtube\n$curso"
