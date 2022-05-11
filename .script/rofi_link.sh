@@ -41,15 +41,18 @@ case $chosen in
         $app https://www.google.com &
         ;;    
     $twitter)
-        $app https://www.twitter.com &
+        $app https://twitter.com/home &
         ;;
     $github)
-        $app https://www.github.com &
+        $app https://github.com/edersonramalho &
         ;;
     $mail)
         $app https://www.gmail.com &
         ;;
     $youtube)
         $app https://www.youtube.com &
+        ;;
+    $curso)
+        $app https://gestaoagil20.club.hotmart.com &
         ;;
 esac
