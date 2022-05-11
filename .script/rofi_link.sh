@@ -10,12 +10,12 @@ msg() {
 }
 
 # Browser
-if [[ -f /usr/bin/chromium ]]; then
+if [[ -f /usr/bin/google-chrome-stable ]]; then
 	app="google-chrome-stable"
-#elif [[ -f /usr/bin/chromium ]]; then
-#    app="chromium"
-#elif [[ -f /usr/bin/firefox ]]; then
-#    app="firefox"
+elif [[ -f /usr/bin/chromium ]]; then
+    app="chromium"
+elif [[ -f /usr/bin/firefox ]]; then
+    app="firefox"
 #elif [[ -f /usr/bin/midori ]]; then
 #	app="midori"
 else
