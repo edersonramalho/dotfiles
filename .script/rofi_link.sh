@@ -1,7 +1,7 @@
 
 style="squared-nord"
 
-#dir="$HOME/.config/rofi/applets/menu/configs/$style"
+# dir="$HOME/.config/rofi/applets/menu/configs/$style"
 rofi_command="rofi -theme $style"
 
 # Error msg
@@ -11,7 +11,7 @@ msg() {
 
 # Browser
 if [[ -f /usr/bin/chromium ]]; then
-	app="chrome"
+	app="google-chrome-stable"
 elif [[ -f /usr/bin/chromium ]]; then
     app="chromium"
 elif [[ -f /usr/bin/firefox ]]; then
