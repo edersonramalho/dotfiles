@@ -106,6 +106,11 @@ alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed
 
 ###
 alias update="sudo pacman -Syyuu; paru -Syu"
+#alias corrigir_update="sudo pacman-mirrors -g;sudo pacman -Syy;sudo pacman-key --refresh-keys;sudo pacman-key
+
+sudo pacman -Scc
+
+sudo pacman -Syyu"
 alias install="sudo pacman -Sy"
 alias df="df -h"
 
