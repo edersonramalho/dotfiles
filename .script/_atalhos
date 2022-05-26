@@ -1,0 +1,38 @@
+#### Sistema
+
+# Reload Conf sxhkd = super + Escape
+# Restart BSPWM = super + alt + {q,r}
+# tiled ou monocle layout = super + m
+
+#### Rofi
+
+# Power = super + p
+# Links = super + l
+# Tradução = super + shift + t
+# Arquivos = super + shift + f	
+# Bluetooth = super + shift + b
+# Wifi = super + shift + w
+
+# Programas Simples = super + shift + d
+# Programas Icon = super + d
+
+#### Aplicativos
+
+# Chrome = super + F1
+# Ranger = super + F2
+# Sublime = super + F3
+# spotify = super + F4
+
+# htop = super + F5
+# nemo = super + F6
+# 
+# Boxes/VMs = super + F8
+
+#### PrintScreen
+
+# Tela = Print 
+# Seleciona área = super + Print
+# Seleciona Janela = super + shift + Print
+
+#### PrintScreen
+
