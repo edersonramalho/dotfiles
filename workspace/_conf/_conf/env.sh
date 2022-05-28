@@ -106,14 +106,16 @@ alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed
 
 ###
 alias update="sudo pacman -Syyuu; paru -Syu"
-#alias corrigir_update="sudo pacman-mirrors -g;sudo pacman -Syy;sudo pacman-key --refresh-keys;sudo pacman-key
+alias atalhos="cat ~/.script/_atalhos"
 
-sudo pacman -Scc
-
-sudo pacman -Syyu"
 alias install="sudo pacman -Sy"
 alias df="df -h"
 
 ### Rofi
 alias rofi_line="rofi -show run -theme nord-oneline"
 alias rofi_menu="rofi -show drun -theme squared-nord -icon-theme "Tela-circle" -show-icons"
+
+#alias corrigir_update="sudo pacman-mirrors -g;sudo pacman -Syy;sudo pacman-key --refresh-keys;sudo pacman-key
+#sudo pacman -Scc
+#sudo pacman -Syyu"
+

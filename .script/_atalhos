@@ -4,6 +4,13 @@
 # Restart BSPWM = super + alt + {q,r}
 # tiled ou monocle layout = super + m
 
+# Posição Janela = super + {_,shift + }{h,j,k,l}
+# Mover Janela = super + {Left,Down,Up,Right}
+
+# Foco = super + {_,shift + }c ou super + {i,o}
+# Desktop = super + Tab
+
+
 #### Rofi
 
 # Power = super + p
@@ -33,6 +40,3 @@
 # Tela = Print 
 # Seleciona área = super + Print
 # Seleciona Janela = super + shift + Print
-
-#### PrintScreen
-
