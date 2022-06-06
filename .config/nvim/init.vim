@@ -8,6 +8,7 @@ call plug#begin('~/.config/nvim/site/autoload')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'Rasukarusan/nvim-select-multi-line'
+  Plug 'matze/vim-move'
 
   "tree
   Plug 'preservim/nerdtree'

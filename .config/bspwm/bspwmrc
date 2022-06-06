@@ -40,7 +40,7 @@ bspc config gapless_monocle      true
 
 
 ## Autostart
-
+xsetroot -cursor_name "Simp1e-Tokyo-Night" &
 nm-applet &
 $HOME/.config/polybar/bspwm.sh &
 feh --bg-fill ~/Imagens/wallpaper/nordic_01.jpg &
