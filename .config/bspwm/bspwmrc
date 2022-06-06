@@ -5,8 +5,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 #sxhkd &
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
-#bspc monitor -d I II III IV V
-bspc monitor -d 1 2 3 4 5
+bspc monitor -d I II III IV V
+#bspc monitor -d 1 2 3 4 5
 
 bspc config border_width        01
 bspc config window_gap          10
@@ -17,7 +17,7 @@ bspc config gapless_monocle      true
 
 #rule
 #bspc rule -a subl desktop=’^2’ state=floating follow=on
-bspc rule -a subl desktop=^1 focus=on
+bspc rule -a subl desktop=1 focus=on
 #bspc rule -a Gimp desktop=’^8’ state=floating follow=on
 bspc rule -a "google-chrome-stable" desktop=’^2’
 #bspc rule -a mplayer2 state=floating bspc rule -a
