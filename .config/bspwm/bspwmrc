@@ -15,28 +15,11 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 #rule
-
-#bspc rule -a firefox desktop='^2'
-#bspc rule -a google-chrome desktop='^2' #follow=on
-#bspc rule -a Chromium desktop='^2'  #follow=on
-#bspc rule -a Subl desktop='^4'
-#bspc rule -a code desktop='^4'
-#bspc rule -a vlc desktop='^5'  follow=on
-#bspc rule -a Spotify desktop='^5' follow=on
-
-# Send to www desktop
-#bspc rule --add Firefox                     desktop='^2' follow=on
-#bspc rule firefox                        	desktop=2
-#bspc rule --add google-chrome-stable        desktop='^2' follow=on
-
-# Send to dev desktop
-#bspc rule --add Atom                        desktop='^3' follow=on
-#bspc rule --add Subl                        desktop='^3' follow=on
-#bspc rule --add Mysql-workbench-bin         desktop='dev' follow=on
-
-# Send to play desktop
-#bspc rule --add Vlc                         desktop='^5' follow=on
-#bspc rule --add Desura                      desktop='play' --one-shot follow=on
+bspc rule -a Subl desktop=’^3’ state=floating follow=on
+#bspc rule -a Gimp desktop=’^8’ state=floating follow=on
+#bspc rule -a Chromium desktop=’^2’
+#bspc rule -a mplayer2 state=floating bspc rule -a
+#Kupfer.py focus=on bspc rule -a Screenkey manage=off
 
 
 ## Autostart
