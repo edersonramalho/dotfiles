@@ -4,7 +4,7 @@
 # Apps
 #################################################################
 
-# chrome
+# chrome 
 super + F1
 	google-chrome-stable
 
@@ -30,6 +30,14 @@ super + F6
 # 
 super + F8
 	gnome-boxes
+
+#################################################################
+# Informações
+#################################################################
+
+# program launcher
+super + shift + d
+	sh ~/.script/notify_date.sh
 
 #################################################################
 # Rofi
@@ -127,8 +135,8 @@ super + Return
 	kitty
 
 # program launcher
-super + shift + d
-	rofi -show run -theme squared-nord
+#super + shift + d
+#	rofi -show run -theme squared-nord
 
 # program launcher (Apps)
 super + d
