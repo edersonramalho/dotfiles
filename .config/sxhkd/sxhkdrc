@@ -35,9 +35,13 @@ super + F8
 # Informações
 #################################################################
 
-# program launcher
+# date
 super + shift + d
 	sh ~/.script/notify_date.sh
+
+# Tempo/Previsão
+super + shift + p
+	sh ~/.script/notify_weather.sh
 
 #################################################################
 # Rofi
@@ -48,7 +52,7 @@ super + p
 	sh ~/.script/rofi_power_menu.sh
 
 ## 
-super + l
+super + shift + l
 	sh ~/.script/rofi_link.sh
 
 ## Tradução

@@ -10,18 +10,19 @@
 # Foco = super + {_,shift + }c ou super + {i,o}
 # Desktop = super + Tab
 
+#### Notificações
+# Date = super + shift + d
 
 #### Rofi
 
+# Programas Icon = super + d
 # Power = super + p
-# Links = super + l
+
+# Links = super + shift + l
 # Tradução = super + shift + t
 # Arquivos = super + shift + f	
 # Bluetooth = super + shift + b
 # Wifi = super + shift + w
-
-# Programas Simples = super + shift + d
-# Programas Icon = super + d
 
 #### Aplicativos
 
