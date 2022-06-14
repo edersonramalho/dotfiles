@@ -20,7 +20,7 @@ bspc config gapless_monocle      true
 #Comando: xprop | awk '/WM_CLASS/{print $4}'
 
 bspc rule -a Sublime_text desktop=III focus=on
-bspc rule -a Google-chrome desktop=II #’^2’
+#bspc rule -a Google-chrome desktop=II #’^2’
 
 #Fullscreen applications
 #bspc rule -a inkscape state=fullscreen
