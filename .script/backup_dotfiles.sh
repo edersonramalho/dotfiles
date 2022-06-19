@@ -34,6 +34,9 @@ rsync -ravz ~/workspace/_conf $DESTINO_CONF2
 rsync -ravz /boot/grub/grub* $DESTINO_GRUB
 rsync -ravz /etc/default $DESTINO_GRUB
 
+pacman -Qe >> $DESTINO/pacote.txt
+paru -Qe >> $DESTINO/pacote_aur.txt
+
 cd $DESTINO
 git add .
 git commit -m "$Backup"
