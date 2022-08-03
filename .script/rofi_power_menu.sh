@@ -56,10 +56,10 @@ then
         i3-msg exit
         ;;
       Reiniciar)
-        systemctl reboot
+        systemctl --no-wall reboot
         ;;
       Desligar)
-        systemctl poweroff
+        systemctl --no-wall poweroff
         ;;
       Suspender)
         $($USE_LOCKER) && "$LOCKER"; systemctl suspend
