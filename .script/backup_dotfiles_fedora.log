@@ -1,0 +1,58 @@
+sending incremental file list
+
+sent 66 bytes  received 12 bytes  156,00 bytes/sec
+total size is 4.668  speedup is 59,85
+sending incremental file list
+.script/
+.script/backup_dotfiles_fedora.log
+
+sent 734 bytes  received 39 bytes  1.546,00 bytes/sec
+total size is 24.920  speedup is 32,24
+sending incremental file list
+
+sent 61 bytes  received 12 bytes  146,00 bytes/sec
+total size is 50  speedup is 0,68
+sending incremental file list
+
+sent 65 bytes  received 12 bytes  154,00 bytes/sec
+total size is 187  speedup is 2,43
+sending incremental file list
+
+sent 154 bytes  received 17 bytes  342,00 bytes/sec
+total size is 332  speedup is 1,94
+sending incremental file list
+
+sent 90 bytes  received 17 bytes  214,00 bytes/sec
+total size is 1.097  speedup is 10,25
+sending incremental file list
+
+sent 130 bytes  received 18 bytes  296,00 bytes/sec
+total size is 854  speedup is 5,77
+sending incremental file list
+
+sent 109 bytes  received 17 bytes  252,00 bytes/sec
+total size is 18.131  speedup is 143,90
+sending incremental file list
+
+sent 281 bytes  received 19 bytes  600,00 bytes/sec
+total size is 27.633  speedup is 92,11
+sending incremental file list
+
+sent 79 bytes  received 17 bytes  192,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+_conf/env.sh
+
+sent 1.491 bytes  received 36 bytes  3.054,00 bytes/sec
+total size is 2.635  speedup is 1,73
+sending incremental file list
+
+sent 19 bytes  received 12 bytes  62,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+
+sent 141 bytes  received 17 bytes  316,00 bytes/sec
+total size is 383  speedup is 2,42
+[main d9bc2f9] Backup 16/11/2022 01:36
+ 5 files changed, 2181 insertions(+), 1 deletion(-)
+ create mode 100644 .script/backup_dotfiles_fedora.log

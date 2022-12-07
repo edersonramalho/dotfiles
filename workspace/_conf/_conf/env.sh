@@ -105,17 +105,18 @@ alias screen1='xrandr --auto'
 alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed to 65"'
 
 ###
-alias update="sudo pacman -Syyuu; paru -Syu"
+alias update="dnfu"
 alias atalhos="cat ~/.script/_atalhos"
 
-alias install="sudo pacman -Sy"
+alias install="dnfi"
 alias df="df -h"
 
 ### Rofi
-alias rofi_line="rofi -show run -theme nord-oneline"
-alias rofi_menu="rofi -show drun -theme squared-nord -icon-theme "Tela-circle" -show-icons"
+#alias rofi_line="rofi -show run -theme nord-oneline"
+#alias rofi_menu="rofi -show drun -theme squared-nord -icon-theme "Tela-circle" -show-icons"
 
 #alias corrigir_update="sudo pacman-mirrors -g;sudo pacman -Syy;sudo pacman-key --refresh-keys;sudo pacman-key
 #sudo pacman -Scc
 #sudo pacman -Syyu"
 
+#sh /home/essantos/.script/backup_dotfiles_fedora.sh >> /home/essantos/.script/backup_dotfiles_fedora.log
