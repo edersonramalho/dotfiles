@@ -1,0 +1,256 @@
+
+### Variables
+set $mod Mod4
+set $term kitty
+
+## Menu
+#set $menu sh /home/essantos/.config/sway/rofi/bin/launcher
+set $menu sh /home/essantos/.scripts/rofi_menu.sh
+set $menu_power sh /home/essantos/.scripts/rofi_powermenu.sh
+#set $menu sh /home/essantos/.scripts/rofi_menu.sh
+set $menu_btf sh /home/essantos/.scripts/rofi_bluetooth.sh
+set $menu_fs sh /home/essantos/.scripts/rofi_filebrowser.sh
+set $menu_links sh /home/essantos/.scripts/rofi_link.sh
+set $update sh /home/essantos/.scripts/update.sh
+
+#comands
+set $cmd_bright sh /home/essantos/.scripts/changebrightness.sh
+
+### Style
+font pango:monospace 12px
+#output * bg `~/.config/sway/background` fill dpms on
+output * bg ~/Imagens/wallpaper/nodic_mountain.jpg fill dpms on
+default_border pixel 1
+titlebar_border_thickness 1
+#smart_gaps on
+gaps outer 1
+gaps inner 1
+#hide_edge_borders smart
+
+### Input configuration
+input type:keyboard {
+	xkb_layout "br"
+}
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+       dwt enabled
+       tap enabled
+}
+
+### Key bindings
+#
+# Basics:
+#
+
+# start a terminal
+bindsym $mod+Return exec $term
+
+# kill focused window
+bindsym $mod+q kill
+
+# start your launcher
+#bindsym $mod+space exec rofi -show run
+bindsym $mod+space exec $menu
+bindsym $mod+p exec $menu_power
+bindsym $mod+b exec $menu_btf
+bindsym $mod+a exec $menu_fs
+bindsym $mod+l exec $menu_links
+
+# Lock
+bindsym $mod+Shift+l exec swaylock -c 000000f0
+
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+floating_modifier $mod
+
+# Brightness
+bindsym XF86MonBrightnessUp exec light -A 2
+#bindsym XF86MonBrightnessUp exec $cmd_bright up
+bindsym XF86MonBrightnessDown exec light -U 2
+#bindsym XF86MonBrightnessDown exec $cmd_bright down
+
+
+# Audio
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym $mod+Control+Left exec --no-startup-id playerctl previous
+bindsym $mod+Control+Right exec --no-startup-id playerctl next
+bindsym $mod+Control+Up exec --no-startup-id playerctl play-pause
+
+#Screenshot
+bindsym Print exec grim "/home/essantos/Imagens/Capturas de tela/screenshot_`date +%Y-%m-%d-%T`.png"
+bindsym Shift+Print exec slurp | grim -g -"/home/essantos/Imagens/Capturas de tela/screenshot_`date +%Y-%m-%d-%T`.png"
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# exit sway (logs you out of your wayland session)
+bindsym $mod+Shift+e exit
+
+#
+# Moving around:
+#
+# Move your focus around
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# _move_ the focused window with the same, but add Shift
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+#
+# Workspaces:
+#
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# Swap last workspace
+bindsym $mod+Tab workspace back_and_forth
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+# Note: workspaces can have any name you want, not just numbers.
+# We just use 1-10 as the default.
+
+# Move to next/previous workspace
+bindsym $mod+bracketright workspace next
+bindsym $mod+bracketleft workspace prev
+
+# Move workspace monitor
+bindsym $mod+Shift+bracketleft move workspace to output left
+bindsym $mod+Shift+bracketright move workspace to output right
+
+#
+# Layout stuff:
+#
+
+# You can "split" the current object of your focus with
+# $mod+b or $mod+v, for horizontal and vertical splits
+# respectively.
+#bindsym $mod+b splith
+#bindsym $mod+v splitv
+
+# Switch the current container between different layout styles
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
+
+# Make the current focus fullscreen
+bindsym $mod+f fullscreen
+
+#bindsym $mod+Shift+s sticky toggle
+
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+Control+Shift+space focus mode_toggle
+
+# move focus to the parent container
+#bindsym $mod+a focus parent
+
+#
+# Scratchpad:
+#
+
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+# Move the currently focused window to the scratchpad
+#bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+#bindsym $mod+minus scratchpad show
+
+#
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+#bar {
+#    position top
+#    status_command i3blocks
+#    colors {
+#        background #323232
+#    }
+#}
+
+# Atalhos programas
+bindsym $mod+F1 exec $term -e glow -p -w 100 /home/essantos/.config/sway/atalhos.md 
+bindsym $mod+F2 exec google-chrome
+bindsym $mod+F3 exec code
+bindsym $mod+F4 exec flatpak run com.spotify.Client
+
+bindsym $mod+F5 exec subl
+bindsym $mod+F6 exec nautilus
+bindsym $mod+F7 exec $term -e ranger
+bindsym $mod+F8 exec $term -e htop
+
+bindsym $mod+F9 exec $term -e $update
+
+
+# Themes
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme "Nordic-bluish-accent"
+    gsettings set $gnome-schema icon-theme "NordArc-Icons"
+    gsettings set org.gnome.desktop.wm.preferences theme "Nordic-bluish-accent"
+}
+
+# assign apps to workspaces
+for_window [class="Kitty"] move window to workspace 1
+for_window [class="Google-chrome-stable"] move window to workspace 2
+for_window [class="Google-chrome"] move window to workspace 2
+for_window [class="Google CRRhrome"] move window to workspace 2
+for_window [class="Code"] move window to workspace 3
+for_window [class="Spotify"] move window to workspace 4
+for_window [class="Firefox"] move window to workspace 5
+
+### Autostart
+exec swayidle timeout 350 "swaylock -c 000000f0" before-sleep "swaylock -c 000000f0"
+exec_always sh $HOME/.config/waybar/waybar.sh
+exec mako
+
+include /etc/sway/config.d/*
