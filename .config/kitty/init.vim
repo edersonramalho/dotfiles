@@ -145,7 +145,7 @@ let g:nord_italic = v:false
 colorscheme nord
 
 " Adds
-set guifont=Anonymice\ Nerd\ Font\ Mono:h12
+set guifont=Anonymice\ Nerd\ Font\ Mono:h10
 
 " Identar
 let g:indentLine_enabled = 1

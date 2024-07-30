@@ -105,7 +105,8 @@ alias screen1='xrandr --auto'
 alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed to 65"'
 
 ###
-alias update="dnfu"
+alias update="sudo dnf upgrade -y && sudo dnf autoremove -y && dnf clean all && flatpak update -y && flatpak uninstall --unused -y;"
+alias backup="sh /home/essantos/.script/backup_dotfiles_fedora.sh >> /home/essantos/.script/backup_dotfiles_fedora.log"
 alias atalhos="cat ~/.script/_atalhos"
 
 alias install="dnfi"
