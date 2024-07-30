@@ -5,3 +5,275 @@ sent 2.411 bytes  received 35 bytes  4.892,00 bytes/sec
 total size is 4.747  speedup is 1,94
 sending incremental file list
 .script/
+.script/backup_dotfiles.log
+.script/backup_dotfiles_fedora.log
+.script/takeshot.sh
+
+sent 1.249 bytes  received 77 bytes  2.652,00 bytes/sec
+total size is 2.189  speedup is 1,65
+sending incremental file list
+
+sent 61 bytes  received 12 bytes  146,00 bytes/sec
+total size is 50  speedup is 0,68
+sending incremental file list
+.gitconfig
+
+sent 241 bytes  received 35 bytes  552,00 bytes/sec
+total size is 187  speedup is 0,68
+sending incremental file list
+autostart/
+
+sent 121 bytes  received 20 bytes  282,00 bytes/sec
+total size is 124  speedup is 0,88
+sending incremental file list
+bspwm/
+bspwm/bspwmrc
+bspwm/compton.conf
+bspwm/bin/
+bspwm/bin/askpass
+bspwm/bin/bspbar
+bspwm/bin/bspcolors
+bspwm/bin/bspcomp
+bspwm/bin/winmask
+bspwm/polybar/
+bspwm/polybar/.module
+bspwm/polybar/.system
+bspwm/polybar/colors
+bspwm/polybar/config
+bspwm/polybar/modules
+bspwm/polybar/system
+bspwm/rofi/
+bspwm/rofi/bin/
+bspwm/rofi/bin/launcher
+bspwm/rofi/bin/powermenu
+bspwm/rofi/bin/powermenu.sh
+bspwm/rofi/bin/themes
+bspwm/rofi/bin/windows
+bspwm/rofi/dialogs/
+bspwm/rofi/dialogs/askpass.rasi
+bspwm/rofi/dialogs/colors.rasi
+bspwm/rofi/dialogs/confirm.rasi
+bspwm/rofi/themes/
+bspwm/rofi/themes/askpass.rasi
+bspwm/rofi/themes/asroot.rasi
+bspwm/rofi/themes/colors.rasi
+bspwm/rofi/themes/confirm.rasi
+bspwm/rofi/themes/launcher.rasi
+bspwm/rofi/themes/networkmenu.rasi
+bspwm/rofi/themes/powermenu.rasi
+bspwm/rofi/themes/themes.rasi
+bspwm/rofi/themes/window.rasi
+bspwm/themes/
+bspwm/themes/beach
+bspwm/themes/blade
+bspwm/themes/bouquet
+bspwm/themes/cyberpunk
+bspwm/themes/dracula
+bspwm/themes/flowers
+bspwm/themes/forest
+bspwm/themes/groot
+bspwm/themes/gruvbox
+bspwm/themes/hack
+bspwm/themes/keyboards
+bspwm/themes/light
+bspwm/themes/manhattan
+bspwm/themes/nord
+bspwm/themes/pastel
+bspwm/themes/rick
+bspwm/themes/set-theme
+bspwm/themes/spark
+bspwm/themes/tealize
+bspwm/themes/wave
+
+sent 22.987 bytes  received 1.006 bytes  47.986,00 bytes/sec
+total size is 89.527  speedup is 3,73
+sending incremental file list
+
+sent 86 bytes  received 17 bytes  206,00 bytes/sec
+total size is 1.097  speedup is 10,65
+sending incremental file list
+kitty/
+kitty/init.vim
+kitty/kitty.conf
+
+sent 3.317 bytes  received 87 bytes  6.808,00 bytes/sec
+total size is 302.424  speedup is 88,84
+sending incremental file list
+neofetch/
+neofetch/config.conf
+
+sent 1.719 bytes  received 39 bytes  3.516,00 bytes/sec
+total size is 4.408  speedup is 2,51
+sending incremental file list
+nvim/
+nvim/.neoconf.json
+nvim/.stylua.toml
+nvim/README.md
+nvim/init.lua
+nvim/lazy-lock.json
+nvim/neovim.yml
+nvim/selene.toml
+nvim/lua/
+nvim/lua/community.lua
+nvim/lua/lazy_setup.lua
+nvim/lua/polish.lua
+nvim/lua/plugins/
+nvim/lua/plugins/astrocore.lua
+nvim/lua/plugins/astrolsp.lua
+nvim/lua/plugins/astroui.lua
+nvim/lua/plugins/mason.lua
+nvim/lua/plugins/none-ls.lua
+nvim/lua/plugins/treesitter.lua
+nvim/lua/plugins/user.lua
+
+sent 10.379 bytes  received 359 bytes  21.476,00 bytes/sec
+total size is 25.880  speedup is 2,41
+sending incremental file list
+
+sent 19 bytes  received 12 bytes  62,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+
+sent 19 bytes  received 12 bytes  62,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+ranger/
+
+sent 78 bytes  received 20 bytes  196,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+rofi/
+rofi/themes/
+rofi/themes/askpass.rasi
+rofi/themes/asroot.rasi
+rofi/themes/colors.rasi
+rofi/themes/confirm.rasi
+rofi/themes/launcher.rasi
+rofi/themes/networkmenu.rasi
+rofi/themes/nord-oneline.rasi
+rofi/themes/nord-twoLines.rasi
+rofi/themes/powermenu.rasi
+rofi/themes/squared-nord.rasi
+rofi/themes/themes.rasi
+rofi/themes/window.rasi
+
+sent 4.716 bytes  received 256 bytes  9.944,00 bytes/sec
+total size is 33.452  speedup is 6,73
+sending incremental file list
+sxhkd/
+sxhkd/sxhkdrc
+
+sent 1.771 bytes  received 39 bytes  3.620,00 bytes/sec
+total size is 3.595  speedup is 1,99
+sending incremental file list
+
+sent 19 bytes  received 12 bytes  62,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+_conf/
+_conf/backup.sh
+_conf/env.sh
+
+sent 1.665 bytes  received 58 bytes  3.446,00 bytes/sec
+total size is 2.946  speedup is 1,71
+sending incremental file list
+
+sent 19 bytes  received 12 bytes  62,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+default/useradd
+
+sent 300 bytes  received 36 bytes  672,00 bytes/sec
+total size is 383  speedup is 1,14
+[main 8cb1dbe] Backup 29/07/2024 23:50
+ 91 files changed, 4590 insertions(+), 454 deletions(-)
+ create mode 100755 .config/bspwm/bin/askpass
+ create mode 100755 .config/bspwm/bin/bspbar
+ create mode 100755 .config/bspwm/bin/bspcolors
+ create mode 100755 .config/bspwm/bin/bspcomp
+ create mode 100755 .config/bspwm/bin/winmask
+ create mode 100755 .config/bspwm/compton.conf
+ create mode 100644 .config/bspwm/polybar/.module
+ create mode 100644 .config/bspwm/polybar/.system
+ create mode 100755 .config/bspwm/polybar/colors
+ create mode 100755 .config/bspwm/polybar/config
+ create mode 100755 .config/bspwm/polybar/modules
+ create mode 100755 .config/bspwm/polybar/system
+ create mode 100755 .config/bspwm/rofi/bin/launcher
+ create mode 100755 .config/bspwm/rofi/bin/powermenu
+ create mode 100755 .config/bspwm/rofi/bin/powermenu.sh
+ create mode 100755 .config/bspwm/rofi/bin/themes
+ create mode 100755 .config/bspwm/rofi/bin/windows
+ create mode 100755 .config/bspwm/rofi/dialogs/askpass.rasi
+ create mode 100755 .config/bspwm/rofi/dialogs/colors.rasi
+ create mode 100755 .config/bspwm/rofi/dialogs/confirm.rasi
+ create mode 100755 .config/bspwm/rofi/themes/askpass.rasi
+ create mode 100755 .config/bspwm/rofi/themes/asroot.rasi
+ create mode 100755 .config/bspwm/rofi/themes/colors.rasi
+ create mode 100755 .config/bspwm/rofi/themes/confirm.rasi
+ create mode 100755 .config/bspwm/rofi/themes/launcher.rasi
+ create mode 100755 .config/bspwm/rofi/themes/networkmenu.rasi
+ create mode 100755 .config/bspwm/rofi/themes/powermenu.rasi
+ create mode 100755 .config/bspwm/rofi/themes/themes.rasi
+ create mode 100755 .config/bspwm/rofi/themes/window.rasi
+ create mode 100755 .config/bspwm/themes/beach
+ create mode 100755 .config/bspwm/themes/blade
+ create mode 100755 .config/bspwm/themes/bouquet
+ create mode 100755 .config/bspwm/themes/cyberpunk
+ create mode 100755 .config/bspwm/themes/dracula
+ create mode 100755 .config/bspwm/themes/flowers
+ create mode 100755 .config/bspwm/themes/forest
+ create mode 100755 .config/bspwm/themes/groot
+ create mode 100755 .config/bspwm/themes/gruvbox
+ create mode 100755 .config/bspwm/themes/hack
+ create mode 100755 .config/bspwm/themes/keyboards
+ create mode 100755 .config/bspwm/themes/light
+ create mode 100755 .config/bspwm/themes/manhattan
+ create mode 100755 .config/bspwm/themes/nord
+ create mode 100755 .config/bspwm/themes/pastel
+ create mode 100755 .config/bspwm/themes/rick
+ create mode 100755 .config/bspwm/themes/set-theme
+ create mode 100755 .config/bspwm/themes/spark
+ create mode 100755 .config/bspwm/themes/tealize
+ create mode 100755 .config/bspwm/themes/wave
+ mode change 100644 => 100755 .config/neofetch/config.conf
+ create mode 100644 .config/nvim/.neoconf.json
+ create mode 100644 .config/nvim/.stylua.toml
+ create mode 100644 .config/nvim/README.md
+ create mode 100644 .config/nvim/lazy-lock.json
+ create mode 100644 .config/nvim/lua/community.lua
+ create mode 100644 .config/nvim/lua/lazy_setup.lua
+ create mode 100644 .config/nvim/lua/plugins/astrocore.lua
+ create mode 100644 .config/nvim/lua/plugins/astrolsp.lua
+ create mode 100644 .config/nvim/lua/plugins/astroui.lua
+ create mode 100644 .config/nvim/lua/plugins/mason.lua
+ create mode 100644 .config/nvim/lua/plugins/none-ls.lua
+ create mode 100644 .config/nvim/lua/plugins/treesitter.lua
+ create mode 100644 .config/nvim/lua/plugins/user.lua
+ create mode 100644 .config/nvim/lua/polish.lua
+ create mode 100644 .config/nvim/neovim.yml
+ create mode 100644 .config/nvim/selene.toml
+ mode change 100644 => 100755 .config/rofi/themes/askpass.rasi
+ mode change 100644 => 100755 .config/rofi/themes/asroot.rasi
+ mode change 100644 => 100755 .config/rofi/themes/colors.rasi
+ mode change 100644 => 100755 .config/rofi/themes/confirm.rasi
+ mode change 100644 => 100755 .config/rofi/themes/launcher.rasi
+ mode change 100644 => 100755 .config/rofi/themes/networkmenu.rasi
+ create mode 100644 .config/rofi/themes/nord-oneline.rasi
+ create mode 100644 .config/rofi/themes/nord-twoLines.rasi
+ mode change 100644 => 100755 .config/rofi/themes/powermenu.rasi
+ create mode 100644 .config/rofi/themes/squared-nord.rasi
+ mode change 100644 => 100755 .config/rofi/themes/themes.rasi
+ mode change 100644 => 100755 .config/rofi/themes/window.rasi
+ mode change 100644 => 100755 .config/sxhkd/sxhkdrc
+ create mode 100644 .script/backup_dotfiles.log
+ create mode 100644 .script/takeshot.sh
+ create mode 100644 .~lock._atalhos.ods#
+ create mode 100644 _atalhos.ods
+ create mode 100644 workspace/_conf/_conf/backup.sh
+sending incremental file list
+
+sent 66 bytes  received 12 bytes  156,00 bytes/sec
+total size is 4.747  speedup is 60,86
+sending incremental file list
+.script/
