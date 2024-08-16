@@ -955,3 +955,74 @@ sending incremental file list
 sent 66 bytes  received 12 bytes  156,00 bytes/sec
 total size is 4.747  speedup is 60,86
 sending incremental file list
+.script/backup_dotfiles.log
+
+sent 3.445 bytes  received 36 bytes  6.962,00 bytes/sec
+total size is 32.505  speedup is 9,34
+sending incremental file list
+
+sent 61 bytes  received 12 bytes  146,00 bytes/sec
+total size is 50  speedup is 0,68
+sending incremental file list
+
+sent 70 bytes  received 12 bytes  164,00 bytes/sec
+total size is 187  speedup is 2,28
+sending incremental file list
+
+sent 118 bytes  received 17 bytes  270,00 bytes/sec
+total size is 124  speedup is 0,92
+sending incremental file list
+
+sent 1.335 bytes  received 24 bytes  2.718,00 bytes/sec
+total size is 89.527  speedup is 65,88
+sending incremental file list
+
+sent 756 bytes  received 21 bytes  1.554,00 bytes/sec
+total size is 56.376  speedup is 72,56
+sending incremental file list
+
+sent 90 bytes  received 17 bytes  214,00 bytes/sec
+total size is 1.097  speedup is 10,25
+sending incremental file list
+
+sent 1.128 bytes  received 46 bytes  2.348,00 bytes/sec
+total size is 302.424  speedup is 257,60
+sending incremental file list
+
+sent 107 bytes  received 17 bytes  248,00 bytes/sec
+total size is 4.408  speedup is 35,55
+sending incremental file list
+
+sent 559 bytes  received 19 bytes  1.156,00 bytes/sec
+total size is 25.880  speedup is 44,78
+sending incremental file list
+
+sent 79 bytes  received 17 bytes  192,00 bytes/sec
+total size is 0  speedup is 0,00
+sending incremental file list
+
+sent 426 bytes  received 18 bytes  888,00 bytes/sec
+total size is 33.452  speedup is 75,34
+sending incremental file list
+
+sent 98 bytes  received 17 bytes  230,00 bytes/sec
+total size is 3.595  speedup is 31,26
+sending incremental file list
+
+sent 130 bytes  received 17 bytes  294,00 bytes/sec
+total size is 2.907  speedup is 19,78
+[main a33644b] Backup 14/08/2024 21:46
+ 1 file changed, 71 insertions(+)
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+sending incremental file list
+
+sent 66 bytes  received 12 bytes  156,00 bytes/sec
+total size is 4.747  speedup is 60,86
+sending incremental file list
