@@ -131,3 +131,5 @@ source ~/workspace/_conf/env.sh
 source ~/workspace/_conf/backup.sh
 
 export PATH=$PATH:/home/essantos/.spicetify
+
+clear
