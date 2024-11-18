@@ -105,7 +105,7 @@ alias screen1='xrandr --auto'
 alias ttl='sudo sysctl net.ipv4.ip_default_ttl=65;echo "TTL successfully changed to 65"'
 
 ###
-alias update="dnf update --refresh && sudo dnf upgrade -y && sudo dnf autoremove -y && dnf clean all && flatpak update -y && flatpak uninstall --unused -y;"
+alias update="sudo dnf update --refresh && sudo dnf upgrade -y && sudo dnf autoremove -y && dnf clean all && flatpak update -y && flatpak uninstall --unused -y;"
 alias backup="sh ~/.scripts/backup_dotfiles.sh >> ~/.script/backup_dotfiles.log"
 alias atalhos="cat ~/.script/_atalhos"
 
